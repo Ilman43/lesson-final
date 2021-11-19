@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .size-1 {
+            font-size: 64px;
+        }
+        .size-2 {
+            font-size: 36px;
+        }
+        .size-3 {
+            font-size: 20px;
+        }
+        .size-4 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .color-1 {
+            color: #1F3F68;
+        }
+        .color-3 {
+            color: #356EAD;
+        }
+        .font-1 {
+            font-family: 'galien';
+            font-weight: bold;
+        }
+        .space-text {
+            letter-spacing: 0.07em;
+        }
+        .space-text-2 {
+            letter-spacing: 0.05em;
+        }
+        .opacity-text-1 {
+            opacity: 0.6;
+        }
+        .text-wid-1 {
+            width: 317px;
+        }
+        .text-wid-2 {
+            width: 460px;
+        }
+        .header {
+            padding:48px 83px ;
+        }
+        .ill-block {
+            width: 750px;
+            height: 530px;
+            position: absolute;
+            left: 920px;
+            top: 200px;
+            z-index: 0;
+            background-image: url(/illustration.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .knopka {
+            background: #5A98D0;
+            border-radius: 10px;
+            width: 220px;
+            height: 56px;
+            color: white;
+        }
+        .text-index{
+            z-index: 1;
+        }
+        .marg {
+            background-color: rgb(241, 253, 255);
+            height: 768px;
+            background: linear-gradient(0deg, #98C3E8 -80%, rgba(152, 195, 232, 0) 25%);
+            
+            
+        }
+        .block-1 {
+            position: absolute;
+            left: 1000px;
+            top: 192px;
+            padding: 0px 63px;
+            padding-bottom: 50px;
+            width: 380px;
+            height: 500px;
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+            color: #1F3F68;
+        }
+        .block-2 {
+            position: absolute;
+            left: 370px;
+            top: 488px;
+            padding: 48px 63px;
+            width: 380px;
+            height: 500px;
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+        }
+        .block-3 {
+            position: absolute;
+            left: 1000px;
+            top: 790px;
+            padding: 48px 63px;
+            width: 380px;
+            height: 500px;
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+        }
+        .text-block {
+            margin-top: 192px;
+            width: 358px;
+            color:#316099;
+        }
+        .link-block {
+            margin-right: 28px;
+        }
+        .text-grey {
+            color: rgb(177, 176, 176);
+        }
+        .what {
+            margin-bottom: 1200px;
+        }
+        .text-block-2 {
+            margin: auto;
+            width: 490px;
+            color: #507cb6;
+            text-shadow: 0px 0px 4px rgb(0, 0, 0);
+        }
+        .mask-group-1 {
+            background-image: url(/Mask\ Group.svg);
+            width: 940px;
+            height: 417px;
+            color: white;
+        }
+        .alberto {
+            background-image: url(/alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg);
+            background-size: cover;
+            width: 940px;
+            height: 417px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+            margin-bottom: 100px;
+        }
+        .block-smart-text {
+            text-align: end;
+            padding: 50px 50px;
+        }
+        .mask-group-2 {
+            margin-left: 190px;
+            width: 422px;
+            height: 417px;
+            background-image: url(/Dribble\ iphonex\ mockup.jpg);
+            border-radius: 10px;  
+        }
+        .bgimage-1 {
+            background-image: url(/Mask\ Group-1.svg);
+            width: 100%;
+            height: 100%;
+            padding: 24px 32px;
+            color: white;
+        }
+        .mask-group-3 {
+            margin-left: 25px;
+            border-radius: 10px;
+            width: 422px;
+            height: 417px;
+            background-image: url(/upload.jpg);
+            margin-bottom: 200px;
+        }
+        .bgimage-2 {
+            width: 100%;
+            height: 100%;
+            background-image: url(/Mask\ Group-2.svg);
+            color: white;
+            padding: 24px 32px;
+        }
+        .our-client {
+            background: #5A98D0;
+            border-radius: 200px 0px 0px 0px;
+            color: white;
+        }
+        .text-footer {
+            padding-bottom: 110px;
+        }
+        footer {
+            margin-top: 125px;
+            padding-top: 100px;
+            background: #316099;
+            border-radius: 0px 200px 0px 0px;
+            margin-right: 96px;
+        }
+        .button-1 {
+            width: 220px;
+            height: 56px;
+            background: #5A98D0;
+            border-radius: 10px;
+            padding-top: 15px;
+            margin-top: 80px;
+        }
+        .line-1 {
+            margin-top: 100px;
+            width: 1540px;
+            opacity: 0.4;
+            border: 1px solid #FFFFFF;
+        }
+        .logo {
+            margin-right: 16px;
+        }
+        .footer-text {
+            margin-top: 64px;
+            padding-bottom: 64px;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col"><img src="/logo.jpg" alt=""></div>
+                    <div class="col text-end"><img src="/ic_menu_48px.jpg" class="" alt=""></div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <div class="marg">
+            <div class="container ">
+            <div class="row">
+                <div class="col-6 text-index mt-5 pt-5">
+                        <h1 class="size-1 color-1 mb-5 font-1">New Automation Tool for Your Home</h1>
+                        <p class="color-3  mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
+                        <button class="btn btn-click knopka">See Our Project</button>
+                </div>
+                <div class="col-6 ill-block">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="position-relative what">
+            <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-block">
+                        <h1 class="size-2">What we do to help
+                            our client grow in
+                            digital era,
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="block-1">
+                        <img src="/3.svg" alt="">
+                        <h3 class="size-3 mt-5">Bring Technology To Your Comfrotable Home</h3>
+                        <p class="mt-3 mb-4 text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="link-block mt-5">Learn more</a>
+                        <a href="#" class="mt-5"><img src="/Vector.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="block-2">
+                        <img src="/1.svg" alt="">
+                        <h3 class="size-3 mt-5">Make Your business To Be Better Famous In Internet</h3>
+                        <p class="mt-3 mb-4 pb-2 text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="link-block mt-5">Learn more</a>
+                        <a href="#" class="mt-5"><img src="/Vector.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="block-3">
+                        <img src="/2 20.svg" alt="">
+                        <h3 class="size-3 mt-5">Build Your Digital Product That Suitable For Your Need</h3>
+                        <p class="mt-3 mb-4 pb-2 text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <a href="#" class="link-block mt-5">Learn more</a>
+                        <a href="#" class="mt-5"><img src="/Vector.svg" alt=""></a>
+                </div></div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h2 class="size-2 ">Our Finished Project</h2>
+                </div>
+                <div class="col">
+                    <div class="text-block-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alberto">
+                <div class="mask-group-1">
+                    <div class="block-smart-text">
+                        <h3 class="size-4 mb-4 space-text">Smart Home Installation</h3>
+                        <p class="space-text-2">In Muarakana Housing Estate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mask-group-2">
+                        <div class="bgimage-1">
+                            <h3 class="size-4 mb-3 space-text">Sparklite App</h3>
+                            <p class="space-text-2 opacity-75">Marketplace</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mask-group-3">
+                        <div class="bgimage-2">
+                            <h3 class="size-4 mb-3 space-text">Car-Rapetition App</h3>
+                            <p class="space-text-2 opacity-75">Board</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-client">
+            <div class="container">
+                <div class="row m-auto pt-5">
+                    <div class="col-3">
+                        <h3 class="size-2">Our Beloved Client</h3>
+                    </div>
+                    <div class="col-7">
+                        <p class="space-text-2 opacity-text-1 text-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="/Group 8.svg" alt="">
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="size-2 text-wid-1 mb-5">Intersted to woek with our team?</h2>
+                            <p class="space-text-2 opacity-text-1 text-wid-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        <div class="col text-end">
+                            <div class=" btn btn-primary button-1">Let’s Talk</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-1"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="size-4 mt-5 pt-5">
+                                <img src="/logo.svg" class="logo" alt="">
+                                Afrianska
+                            </div>
+                            <div class="mt-5">
+                                <span class="logo">A.</span>
+                                <span class="space-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <span class="logo">T.</span>
+                                <span class="space-text-2">+62-812-7313-4321</span>
+                            </div>
+                            <div class="mt-4 pt-3">
+                                <span class="logo">E</span>
+                                <span class="space-text-2">hello.afrian@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="mt-5 pt-5 space-text-2">About US</h3>
+                            <p class="mt-4 pt-3 space-text-2">About</p>
+                            <p class="mt-4 space-text-2">What We Do</p>
+                            <p class="mt-4 space-text-2">Project</p>
+                            <p class="mt-4 space-text-2">How It Work With Us</p>
+                        </div>
+                        <div class="col">
+                            <h3 class="mt-5 pt-5 space-text-2">Follow US</h3>
+                            <p class="mt-4 pt-3 space-text-2">Instagram</p>
+                            <p class="mt-4 space-text-2">Facebook</p>
+                            <p class="mt-4 space-text-2">LinkedIn</p>
+                            <p class="mt-4 space-text-2">Youtube</p>
+                        </div>
+                    </div>
+                    <div class="footer-text space-text-2">
+                        2019 © Afrianska. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+            </div>
+    </main>
+</body>
+</html>
